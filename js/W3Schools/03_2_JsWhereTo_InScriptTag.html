@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function myFunctionInHead() {
+        document.getElementById("demo").innerHTML = "Paragraph changed. from script tag in head";
+      }
+    </script>
+  </head>
+  <body>
+
+    <script>
+      function myFunctionInBody() {
+        document.getElementById("demo").innerHTML = "Paragraph changed from script tag in body.";
+      }
+      </script>
+      
+
+    <h2>Demo JavaScript in Head</h2>
+
+    <p id="demo">A Paragraph.</p>
+
+    <button type="button" onclick="myFunctionInHead()">Try it(script tag in head)</button>
+    <button type="button" onclick="myFunctionInBody()">Try it(script tag in body)</button>
+  </body>
+</html>
+
+<!-- You can place any number of scripts in an HTML document.
+Scripts can be placed in the <body>, or in the <head> section of an HTML page, 
+or in both. -->
