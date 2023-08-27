@@ -26,7 +26,7 @@ const circleFromFactorFn=createCircle(2,'anyValue',{something:'drawVal'});
 console.log('====================info')
 console.log('every js object in js has a constructor prop that is referenced by the function through which it was created');
 const x={}; // js engine will translate it to something like this -> const x=new Object();
-//similarlay we have other built in constructors for example--> new string(),new Boolean(),new Number()
+//similarlay we have other built in constructors for example--> new string(),new Boolean(),new Number(),new Function() {this one covered on 06_FunctionsAreObjects}
 //For example, when we intialize a string -> ''."" it actually calls builtin constructor only
 console.log(x.constructor);
 

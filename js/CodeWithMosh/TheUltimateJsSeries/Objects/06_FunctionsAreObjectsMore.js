@@ -11,8 +11,8 @@ function Circle(radius)
 const normalCircleObj=new Circle(3);
 console.log(normalCircleObj);
 
-const aCircleObj=Circle.call(normalCircleObj,10); //here {} object will refer to this in function circle and it has only argument, that's why only 1 argument is passed
-console.log(aCircleObj);
+const result=Circle.call(normalCircleObj,10); //here normalCircleObj will refer to this in function circle and it has only argument, that's why only 1 argument is passed
+console.log(result); //constructor function does not explicitly return a value
 console.log(normalCircleObj);
 
 const person = {
