@@ -25,5 +25,6 @@ this.draw=function(){
 
 const circleObj=new Circle1(2);
 console.log(circleObj);
+
 const normalCircleObj=new Circle(3)
 console.log(normalCircleObj);
