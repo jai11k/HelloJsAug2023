@@ -24,6 +24,12 @@ const person={
         }
 
         const parts=value.split(' ');
+
+        if(parts.length !==2)
+        {
+            throw new Error('enter a first and last name');
+        }
+
         this.firstName=parts[0];
         this.lastName=parts[1];
     }

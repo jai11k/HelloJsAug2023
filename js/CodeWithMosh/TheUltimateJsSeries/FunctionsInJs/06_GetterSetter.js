@@ -21,7 +21,7 @@ const person={
 // console.log(`${person.firstName} ${person.lastName}`);
 console.log(person.normalMEthodFullName());
 
-console.log(person.fullName);
+console.log(person.fullName); // now we r using the func as prop
 
 
 person.fullName='jaii simran';
