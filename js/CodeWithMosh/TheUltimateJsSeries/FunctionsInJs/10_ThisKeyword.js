@@ -47,7 +47,8 @@ console.log('this play Video', this)
 
 playVideo();
 
-function Video(title){
+function Video(title)
+{
     this.title=title;
     console.log('this in constructor functions(using new operator)',this)
 }
@@ -64,12 +65,13 @@ const video2={
     title:'c',
     tags:['a','b','c','d'],
     showTags() {
-this.tags.forEach( function(singleTag){
-    console.log(this,singleTag) // on this line this refer to global object, which is wrong, to fix this
-}
+    this.tags.forEach( function(singleTag) // THIS FUNCTION IS REGULAR FN, NOT A FN IN VIDEO OBJECT LIKE showTags()
+    {
+        console.log(this,singleTag) // on this line this refer to global object, which is wrong, to fix this
+    }
 ,this  //this is passed to tell foreach, that this object should be used, when this is called in foreach
 );
-    }
+    },
 };
 
 video2.showTags();
