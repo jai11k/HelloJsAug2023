@@ -20,13 +20,12 @@ Circle.prototype.duplicate=function(){
 //lets imagine tommorow, we r gonna add square object, which will have same duplicate implementation, which we don't want to repeat
 
 function ShapeFocused()
-{
+{ 
+}
 
-
-    ShapeFocused.prototype.duplicateInShapeFocused=function()
+ShapeFocused.prototype.duplicateInShapeFocused=function()
 {
     console.log('duplicate');
-}
 }
 
 const s=new ShapeFocused(); //this s obj inherts from shapeBase and the shapeBae inherits from objectBase

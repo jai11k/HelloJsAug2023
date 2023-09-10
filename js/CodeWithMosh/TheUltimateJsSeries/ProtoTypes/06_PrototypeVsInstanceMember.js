@@ -7,7 +7,7 @@ function createCircle(radius)
 const c1=new createCircle(10);
 const c2=new createCircle(10);
 
-//suppose we have thousands of circle obj's in an application, but the draw method is same, 1000 copies id draw method is waste of memory, heela=>
+//suppose we have thousands of circle obj's in an application, but the draw method is same, 1000 copies of draw method is waste of memory, heela=>
 
 function createCircleFocused(radius)
 {
@@ -37,6 +37,6 @@ c3.toString(); // works in chrome dev tools not in vs code, hmm strange
 console.log('helo');
 
 
-//at last remmeber, in both these kinf of members, you can refer other memebers like move fn(instance memeber) is being called inside prototype draw fn
+//at last remmeber, in both these kind of members, you can refer other memebers like move fn(instance memeber) is being called inside prototype draw fn
 //we could do vice verca too
 
